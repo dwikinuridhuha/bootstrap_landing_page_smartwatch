@@ -1,0 +1,179 @@
+@import "skins/global";
+
+//header secsion
+.header {
+  background-color: $crimsonColor;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+
+  .navbar {
+    padding: 0;
+
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: white;
+
+      .icon-gear {
+        height: 1.2rem;
+        width: 1.2rem;
+        border: 3px solid white;
+        display: inline-block;
+        border-radius: 50%;
+        position: relative;
+
+        &:before {
+          content: '';
+          height: 0.3rem;
+          width: 0.3rem;
+          background-color: white;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          border-radius: 50%;
+          margin-left: -2px;
+          margin-top: -2px;
+        }
+      }
+    }
+
+    #collapsibleNavbar {
+
+      .nav-item {
+
+        .nav-link {
+
+          color: white;
+          font-size: 0.9rem;
+          text-transform: uppercase;
+          font-weight: 400;
+          padding: 20px 15px 20px;
+          line-height: 26px;
+          opacity: 0.6;
+        }
+
+        .active {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+//home section
+.home-section {
+  background-color: $crimsonColor;
+  padding: 250px 0 200px;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: '';
+    position: absolute;
+    height: 112px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../img/shape-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    z-index: -1;
+  }
+
+  .bg-shapes div {
+    position: absolute;
+    opacity: .2;
+
+    &:nth-child(1) {
+      height: 100px;
+      width: 100px;
+      top: 20%;
+      left: 20%;
+      background-color: white;
+      border-radius: 50%;
+      animation: shape01 5s linear infinite;
+    }
+
+    &:nth-child(2) {
+      height: 80px;
+      width: 80px;
+      top: 60%;
+      left: 60%;
+      background-color: transparent;
+      border-radius: 50%;
+      border: 5px solid white;
+      border-bottom: 5px solid transparent;
+      animation: shape02 7s linear infinite;
+    }
+
+    &:nth-child(3) {
+      height: 60px;
+      width: 60px;
+      top: 10%;
+      left: 90%;
+      background-color: transparent;
+      border-radius: 50%;
+      border: 5px solid white;
+      border-left: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      animation: shape02 5s linear infinite;
+    }
+
+    &:nth-child(4) {
+      height: 200px;
+      width: 200px;
+      top: 50%;
+      left: calc(100% - 100px);
+      border-radius: 50%;
+      background-color: white;
+      animation: shape03 10s linear infinite;
+    }
+
+    &:nth-child(5) {
+      height: 180px;
+      width: 180px;
+      top: 30%;
+      left: calc(0% - 100px);
+      background-color: transparent;
+      border: 5px solid white;
+      animation: shape02 10s linear infinite;
+    }
+
+  }
+
+  .home-content {
+
+    h1 {
+      font-size: 55px;
+      color: white;
+      font-weight: 700;
+      line-height: 60px;
+    }
+
+    p {
+      color: white;
+      font-size: 18px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      line-height: 28px;
+      text-align: justify;
+    }
+
+  }
+
+  .home-img {
+
+    img {
+      max-width: 400px;
+      width: 100%;
+      position: absolute;
+      left: 140px;
+      top: -50px;
+      animation: product01 5s linear infinite;
+    }
+  }
+}
+
+@import "skins/animation.css";

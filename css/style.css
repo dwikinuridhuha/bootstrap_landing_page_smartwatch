@@ -1,0 +1,174 @@
+/*Google font*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+@import url(skins/animation.css);
+body {
+  margin: 0;
+  font-size: 0.9rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none; }
+
+a {
+  text-decoration: none !important; }
+
+.mybtn1 {
+  background-color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #d70d25;
+  padding: 15px 30px;
+  cursor: pointer;
+  border: none;
+  border-radius: 45px;
+  font-weight: 600;
+  overflow: hidden;
+  z-index: 1;
+  position: relative; }
+  .mybtn1:hover {
+    color: #d70d25; }
+    .mybtn1:hover:before {
+      width: 100%; }
+  .mybtn1:focus {
+    box-shadow: none; }
+  .mybtn1:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    height: 100%;
+    width: 0%;
+    z-index: -1;
+    transition: all 0.3s ease-in; }
+
+.header {
+  background-color: #d70d25;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2); }
+  .header .navbar {
+    padding: 0; }
+    .header .navbar .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: white; }
+      .header .navbar .navbar-brand .icon-gear {
+        height: 1.2rem;
+        width: 1.2rem;
+        border: 3px solid white;
+        display: inline-block;
+        border-radius: 50%;
+        position: relative; }
+        .header .navbar .navbar-brand .icon-gear:before {
+          content: '';
+          height: 0.3rem;
+          width: 0.3rem;
+          background-color: white;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          border-radius: 50%;
+          margin-left: -2px;
+          margin-top: -2px; }
+    .header .navbar #collapsibleNavbar .nav-item .nav-link {
+      color: white;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      font-weight: 400;
+      padding: 20px 15px 20px;
+      line-height: 26px;
+      opacity: 0.6; }
+    .header .navbar #collapsibleNavbar .nav-item .active {
+      opacity: 1; }
+
+.home-section {
+  background-color: #d70d25;
+  padding: 250px 0 200px;
+  z-index: 1;
+  position: relative;
+  overflow: hidden; }
+  .home-section:before {
+    content: '';
+    position: absolute;
+    height: 112px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../img/shape-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    z-index: -1; }
+  .home-section .bg-shapes div {
+    position: absolute;
+    opacity: .2; }
+    .home-section .bg-shapes div:nth-child(1) {
+      height: 100px;
+      width: 100px;
+      top: 20%;
+      left: 20%;
+      background-color: white;
+      border-radius: 50%;
+      animation: shape01 5s linear infinite; }
+    .home-section .bg-shapes div:nth-child(2) {
+      height: 80px;
+      width: 80px;
+      top: 60%;
+      left: 60%;
+      background-color: transparent;
+      border-radius: 50%;
+      border: 5px solid white;
+      border-bottom: 5px solid transparent;
+      animation: shape02 7s linear infinite; }
+    .home-section .bg-shapes div:nth-child(3) {
+      height: 60px;
+      width: 60px;
+      top: 10%;
+      left: 90%;
+      background-color: transparent;
+      border-radius: 50%;
+      border: 5px solid white;
+      border-left: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      animation: shape02 5s linear infinite; }
+    .home-section .bg-shapes div:nth-child(4) {
+      height: 200px;
+      width: 200px;
+      top: 50%;
+      left: calc(100% - 100px);
+      border-radius: 50%;
+      background-color: white;
+      animation: shape03 10s linear infinite; }
+    .home-section .bg-shapes div:nth-child(5) {
+      height: 180px;
+      width: 180px;
+      top: 30%;
+      left: calc(0% - 100px);
+      background-color: transparent;
+      border: 5px solid white;
+      animation: shape02 10s linear infinite; }
+  .home-section .home-content h1 {
+    font-size: 55px;
+    color: white;
+    font-weight: 700;
+    line-height: 60px; }
+  .home-section .home-content p {
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    line-height: 28px;
+    text-align: justify; }
+  .home-section .home-img img {
+    max-width: 400px;
+    width: 100%;
+    position: absolute;
+    left: 140px;
+    top: -50px;
+    animation: product01 5s linear infinite; }
+
+/*# sourceMappingURL=style.css.map */

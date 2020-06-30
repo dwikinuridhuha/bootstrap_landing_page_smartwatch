@@ -1,0 +1,66 @@
+$crimsonColor: #d70d25;
+$blueColor: #4948d4;
+$indigoColor: #6400ae;
+$aquaColor: #05b3b6;
+$blackColor: #222222;
+
+/*Google font*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+//global style
+body {
+  margin: 0;
+  font-size: 0.9rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.mybtn1 {
+  background-color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $crimsonColor;
+  padding: 15px 30px;
+  cursor: pointer;
+  border: none;
+  border-radius: 45px;
+  font-weight: 600;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+
+  &:hover {
+    color: $crimsonColor;
+
+    &:before {
+      width: 100%;
+    }
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    height: 100%;
+    width: 0%;
+    z-index: -1;
+    transition: all 0.3s ease-in;
+  }
+}

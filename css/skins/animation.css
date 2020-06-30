@@ -1,0 +1,49 @@
+/*animasi*/
+@keyframes product01 {
+    0%, 100% {
+        transform: translateY(15px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes shape01 {
+    0%, 100% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(80px);
+    }
+}
+
+@keyframes shape01 {
+    0%, 100% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(80px);
+    }
+}
+
+@keyframes shape02 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes shape03 {
+    0%, 100% {
+        transform: scale(.5);
+    }
+    50% {
+        transform: scale(1);
+    }
+}
