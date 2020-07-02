@@ -286,4 +286,181 @@
   }
 }
 
+// product section
+.products-section {
+  padding: 80px 0 80px;
+  background-color: white;
+
+  .products-item {
+    box-shadow: 0 0 10px #dddde3;
+
+    &:hover .product-img .overlay {
+      opacity: 1;
+
+      .btn {
+        transform: translateX(0px);
+      }
+    }
+  }
+
+  .product-img {
+    border-bottom: 1px solid #eee;
+    position: relative;
+
+    .overlay {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      opacity: 0;
+      z-index: 1;
+      transition: all .5s ease;
+
+      .btn {
+        margin: auto;
+        transform: translateY(100px);
+        transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .product-content {
+    padding: 0 30px;
+    text-align: center;
+
+    .product-price {
+      margin: 15px 0 5px;
+
+      .new-price {
+        font-size: 18px;
+        font-weight: 700;
+        display: inline-block;
+        margin: 0 5px;
+        color: #d70d25;
+      }
+
+      .old-price {
+        font-size: 18px;
+        display: inline-block;
+        color: #959595;
+        font-weight: 400;
+      }
+    }
+
+    .product-name {
+      font-size: 16px;
+      font-weight: 600;
+      color: #222;
+      line-height: 26px;
+      margin: 0;
+      padding-bottom: 26px;
+    }
+  }
+}
+
+// testimonial section
+.testimonial-section {
+  background-image: url('../img/bg-01.jpg');
+  padding: 80px 0 80px;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    background-color: $crimsonColor;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .85;
+  }
+
+  .section-title {
+    .subtitle {
+      color: white;
+    }
+    .title {
+      color: white;
+
+      &::before {
+        background-color: white;
+      }
+    }
+  }
+
+  .testi-item {
+    background-color: white;
+    border-radius: 5px;
+    padding: 30px;
+  }
+
+  .testi-comment {
+    font-size: 16px;
+    font-weight: 400;
+    color: #555;
+    font-style: italic;
+    line-height: 26px;
+    margin: 0 0 10px;
+
+    p .fa-quote-left {
+      margin-right: 5px;
+    }
+
+    p .fa-quote-right {
+      margin-left: 5px;
+    }
+
+    .stars li {
+      display: inline-block;
+      margin: 0 1px;
+
+      i {
+        color: gold;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .client-info {
+    position: relative;
+    padding-left: 80px;
+    img {
+      height: 60px;
+      width: 60px;
+      border: 2px solid transparent;
+      border-color: $crimsonColor;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    h5 {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 0;
+      line-height: 26px;
+      color: $crimsonColor;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 26px;
+      font-weight: 400;
+      color: #555;
+    }
+  }
+}
+
 @import "skins/animation.css";
