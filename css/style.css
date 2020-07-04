@@ -46,6 +46,36 @@ a {
     z-index: -1;
     transition: all 0.3s ease-in; }
 
+.mybtn2 {
+  background-color: #d70d25;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: white;
+  padding: 15px 30px;
+  cursor: pointer;
+  border: none;
+  border-radius: 45px;
+  font-weight: 600;
+  overflow: hidden;
+  z-index: 1;
+  position: relative; }
+  .mybtn2:hover {
+    color: white; }
+    .mybtn2:hover:before {
+      width: 100%; }
+  .mybtn2:focus {
+    box-shadow: none; }
+  .mybtn2:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    height: 100%;
+    width: 0%;
+    z-index: -1;
+    transition: all 0.3s ease-in; }
+
 .section-title .title {
   font-size: 16px;
   font-weight: 500;
@@ -397,5 +427,73 @@ a {
       line-height: 26px;
       font-weight: 400;
       color: #555; }
+
+.faq-section {
+  padding: 80px 0 80px; }
+  .faq-section .faq-item {
+    margin-bottom: 40px; }
+    .faq-section .faq-item h4 {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 28px;
+      color: #222;
+      margin-bottom: 10px; }
+    .faq-section .faq-item p {
+      font-size: 16px;
+      line-height: 26px;
+      color: #555;
+      font-weight: 400;
+      margin: 0; }
+  .faq-section .support-text {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+    text-align: center; }
+    .faq-section .support-text a {
+      color: #d70d25;
+      transition: all 1s ease; }
+      .faq-section .support-text a:hover {
+        color: blueviolet; }
+
+.newsletter-section {
+  background-image: url("../img/bg-02.jpg");
+  padding: 80px 0;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative; }
+  .newsletter-section::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    background-color: #d70d25; }
+  .newsletter-section .section-title .title {
+    color: white; }
+    .newsletter-section .section-title .title::before {
+      background-color: white; }
+  .newsletter-section .section-title .subtitle {
+    color: white; }
+  .newsletter-section .newsletter-form {
+    position: relative; }
+    .newsletter-section .newsletter-form .form-group {
+      margin-bottom: 0; }
+    .newsletter-section .newsletter-form .form-control {
+      height: 60px;
+      border-radius: 60px;
+      padding: 0 195px 0 20px;
+      outline: none;
+      border: none;
+      color: #555;
+      font-weight: 400; }
+      .newsletter-section .newsletter-form .form-control:focus {
+        box-shadow: none; }
+    .newsletter-section .newsletter-form .btn {
+      position: absolute;
+      right: 5px;
+      top: 4px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -65,6 +65,45 @@ a {
   }
 }
 
+.mybtn2 {
+  background-color: $crimsonColor;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: white;
+  padding: 15px 30px;
+  cursor: pointer;
+  border: none;
+  border-radius: 45px;
+  font-weight: 600;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+
+  &:hover {
+    color: white;
+
+    &:before {
+      width: 100%;
+    }
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    height: 100%;
+    width: 0%;
+    z-index: -1;
+    transition: all 0.3s ease-in;
+  }
+}
+
 .section-title {
   .title {
     font-size: 16px;
